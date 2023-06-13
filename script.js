@@ -15,9 +15,9 @@ function palindrome(){
 
 
     if(splitted === stringrev){
-        document.getElementById("ans").innerHTML = "True";
+        document.getElementById("ans").innerHTML = "true";
     }else{
-        document.getElementById("ans").innerHTML = "False";
+        document.getElementById("ans").innerHTML = "false";
     }
 }
 
