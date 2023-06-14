@@ -1,25 +1,15 @@
-// complete the given function
+function palindrome(str){
+	str = str.toLowerCase();
+    let ori = str.split(" ").join("");
 
-function palindrome(){
+    let rev = str.split(" ").join("").split("").reverse().join("");
 
-	let userInput = document.getElementById("input").value;
-
-    let splitted = userInput.split(" ").join("");
-
-    let stringrev = "";
-
-    for(let i = splitted.length - 1; i > -1 ; i--){
-        stringrev = stringrev + splitted.charAt(i);
-    }
-
-
-
-    if(splitted === stringrev){
-        document.getElementById("ans").innerHTML = "true";
+    if(ori == rev){
+        console.log("y");
+        return true;
     }else{
-        document.getElementById("ans").innerHTML = "false";
+        console.log("n");
+        return false;
     }
 }
-
 module.exports = palindrome
-
